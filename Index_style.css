@@ -136,6 +136,7 @@ video {
 .nav #menu li {
   padding-left: 40px;
   display: inline-block;
+  padding-right: 5px;
   font-weight: lighter !important;
   text-transform: uppercase;
   font-size: 14px;
@@ -236,7 +237,7 @@ video {
   opacity: 1;
 }
 
-@media(max-width: 950px) {
+@media(max-width: 1000px) {
   #toggle {
         visibility: visible;
         opacity: 1;
@@ -258,14 +259,35 @@ video {
 
   nav #menu {
         display: none;
+        padding-right: 5px;
   }
 }
+select[name="languages"] {
+  font-size: 16px;
+  padding: 5px;
+  /* border: 1px solid #ccc; */
+  border-radius: 120px;
+  background-color: #ffffff00;
+  color: #e0dcdc;
+}
 
-@media(min-width: 950px) {
+select[name="languages"] option {
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+
+select[name="languages"] option:hover {
+  background-color: #f2f2f2;
+}
+
+
+@media(min-width: 965px) {
   #resize {
         visibility: hidden !important;
   }
 }
+
 
 /*--------------- about section starts  --------------- */
 
@@ -385,12 +407,12 @@ button {
 /*--------------- newsletter section starts  --------------- */
 
 .newsletter {
-  padding: 140px 0;
+  padding: 100px 0;
   background: #161616;
 }
 
 .newsletter input {
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .newsletter .news-data {
@@ -418,6 +440,7 @@ button {
 
 ::placeholder {
   letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 .newsletter .btn {
@@ -465,7 +488,7 @@ button {
   border: none;
   resize: vertical;
   background: transparent;
-  color: #e71515;
+  color: #000000;
   font-weight: bolder;
 }
 
@@ -507,10 +530,11 @@ button.form-control {
 
 #media, #address, #mail {
   text-align: center !important;
+  
 }
 
 .footer .container {
-  padding: 50px;
+  padding: 30px;
   
 }
 
@@ -541,6 +565,7 @@ button.form-control {
 
 #media ul li {
   display: inline-block;
+  padding: 22px;
 }
 
 @media(max-width: 500px) {
